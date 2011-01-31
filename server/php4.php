@@ -140,6 +140,7 @@ class qqFileUploader {
         $pathinfo = pathinfo($file->getName());
         //$filename = $pathinfo['filename'];
         $ext = $pathinfo['extension'];
+	//maybe need improve
         $filename = rtrim(str_replace($ext,'',$pathinfo['basename']),'.');
         //$filename = md5(uniqid());
         
